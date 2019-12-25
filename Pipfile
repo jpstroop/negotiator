@@ -6,6 +6,7 @@ verify_ssl = true
 [dev-packages]
 black = '==19.10b0'
 pytest-cov = '>=2.8.1'
+coveralls = ">=1.9.2"
 
 [pipenv]
 allow_prereleases = true
