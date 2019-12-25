@@ -2,6 +2,14 @@
 
 Proper Content Negotiation for Python
 
+[![Build Status](https://travis-ci.org/jpstroop/negotiator.svg?branch=master)](https://travis-ci.org/jpstroop/negotiator)
+[![Coverage Status](https://coveralls.io/repos/github/jpstroop/negotiator/badge.svg?branch=master)](https://coveralls.io/github/jpstroop/negotiator?branch=master)
+[![Python 3.6](https://img.shields.io/badge/python-3.6-yellow.svg)](https://img.shields.io/badge/python-3.6-yellow.svg)
+[![Python 3.7](https://img.shields.io/badge/python-3.7-yellow.svg)](https://img.shields.io/badge/python-3.7-yellow.svg)
+[![Python 3.8](https://img.shields.io/badge/python-3.8-yellow.svg)](https://img.shields.io/badge/python-3.8-yellow.svg)
+[![Python Nightly](https://img.shields.io/badge/python-nightly-yellow.svg)](https://img.shields.io/badge/python-nightly-yellow.svg)
+
+
 ## Introduction
 
 Negotiator offers a framework for making content negotiation decisions based on the HTTP accept headers.

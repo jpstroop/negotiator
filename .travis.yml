@@ -1,0 +1,27 @@
+language: python
+env:
+  - PIPENV_VERBOSITY=-1
+
+jobs:
+  include:
+    - name: "Python 3.6 on Ubuntu Bionic"
+      dist: bionic
+      python: 3.6
+    - name: "Python 3.7 on Ubuntu Bionic"
+      dist: bionic
+      python: 3.7
+    - name: "Python 3.8 on Ubuntu Bionic"
+      dist: bionic
+      python: 3.8
+    - name: "Python nightly on Ubuntu Bionic"
+      dist: bionic
+      python: "nightly"
+    - name: "Python 3.7.5 on macOS 10.14"
+      os: osx
+      osx_image: xcode11.2
+      language: shell
+      before_install: brew install pipenv
+
+install: pipenv install --dev
+script: pipenv run pytest --cov=negotiator
+after_success: coveralls
